@@ -3,10 +3,7 @@ name: test labels
 on:
   pull_request:
     branches:
-      - master
-  push:
-    branches: 
-      - master
+      - main
         
 jobs:
   basic:
@@ -15,7 +12,6 @@ jobs:
     steps:
       - name: start
         run: echo "triggered"
-    
     
   unit-tests:
     name: 'Unit Tests'
