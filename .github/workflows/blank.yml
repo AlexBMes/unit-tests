@@ -3,8 +3,6 @@ on:
   pull_request:
     branches:
       - master
-    types: [opened, synchonize, reopened, labeled]
-
 jobs:
   unit-tests:
     name: 'Unit Tests'
