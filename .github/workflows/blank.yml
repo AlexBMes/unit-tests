@@ -17,7 +17,8 @@ jobs:
   unit-tests:
     name: 'Unit Tests'
     runs-on: ubuntu-latest
-    if: (${{github.event.pull_requests.labels.*.name == 'feature'}} || ${{github.event.pull_requests.labels.*.name == 'bug'}} || ${{github.event.pull_requests.labels.*.name == 'patch'}})
+
+    if: ${{github.event.pull_requests.labels.*.name == 'feature'}} || ${{github.event.pull_requests.labels.*.name == 'bug'}} || ${{github.event.pull_requests.labels.*.name == 'patch'}}
 
     steps:
       - name: woah it worked
