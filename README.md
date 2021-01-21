@@ -1,6 +1,3 @@
 # unit-tests
 
-stktjstjksjt
-
-sdfsfsdfsd
-tskdfjssf
+Testing synchonize
