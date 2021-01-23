@@ -1,0 +1,15 @@
+project_id: &project_id <project_id>
+create_google_project: false
+location_id: "europe-west2"
+components:
+  common:
+    entrypoint: python main.py
+    runtime: python38
+    env: flex
+  specs:
+    default:
+      automatic_scaling: {}
+      deployment:
+        container:
+          image: <image_uri>
+
