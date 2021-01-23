@@ -45,7 +45,9 @@ jobs:
         cd unit_tests
         MESSAGE="PASSED: All unit tests passed"
         for dir in $(find $(pwd) \( -type f -name 'main.tf' \) |  sed -r 's|/[^/]+$||'); do
-          echo "Directory: ${dir}"
+          echo ""
+          echo ""
+          echo ""
           cd $dir
           adapter_name=$(find . -name "*locals*" | sed -e "s/^.\///" -e "s/_locals.tf$//")
           echo -e "\033[1m${adapter_name^^} TESTS\033[0m"
